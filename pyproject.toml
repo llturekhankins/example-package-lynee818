@@ -1,15 +1,32 @@
-# contents of pyproject.toml
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "example-package-lynee818"
+name = "example_package_lynee818"
 version = "0.1.0"
 dependencies = [
   "numpy"
 ]
+authors = [
+  { name="Lynee", email="lynee818@example.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Private :: Do Not Upload",
+]
+
+[tool.hatch]
+version.path = "src/example_package_YOUR_USERNAME_HERE/__init__.py"
 
 [project.optional-dependencies]
 test = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://llturekhankins.github.io/example_package_lynee818"
+"Source Code" = "https://github.com/llturekhankins/example_package-lynee818"
